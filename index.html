@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bulma -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <!-- Place your kit's code here -->
+    <script src="https://kit.fontawesome.com/31bb0f79a1.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="estilos.css">
+
+    <title>Formulario</title>
+</head>
+<body>  
+    <div class="is-flex is-flex-direction-column is-justify-content-center is-align-items-center" id="div">
+        <h1 class="title is-2">Formulario</h1>
+        <form class="box" id="form">
+            <div class="field is-horizontal">
+                <div class="field-body">
+                  <div class="field">
+                    <label class="label">Nombre</label>
+                    <p class="control is-expanded has-icons-left has-icons-right">
+                      <input class="input" type="text" placeholder="Nombre" id="nombre" name="nombre">
+                      <span class="icon is-small is-left">
+                        <i class="far fa-user-circle"></i>
+                      </span>
+                    </p>
+                    <div id="resultado__nombre" class="inactivo">Campo invalido, debe contener solo letras</div>
+                  </div>
+                  <div class="field">
+                      <label class="label">Apellido</label>
+                    <p class="control is-expanded has-icons-left has-icons-right">
+                      <input class="input" type="text" placeholder="Apellido" id="apellido" name="apellido">
+                      <span class="icon is-small is-left">
+                        <i class="far fa-user-circle"></i>
+                      </span>      
+                    </p>
+                    <div id="resultado__apellido" class="inactivo">Campo invalido, debe contener solo letras</div>
+                  </div>
+                </div>
+            </div>
+
+            <div class="field">
+                <label class="label">Usuario</label>
+                <div class="control has-icons-left has-icons-right">
+                    <input type="text" placeholder="Usuario" class="input" id="usuario" name="usuario">
+                    <span class="icon is-small is-left">
+                        <i class="fas fa-user"></i>
+                    </span>
+                       
+                </div>
+                <div id="resultado__usuario" class="inactivo">Campo invalido, debe contener números y letras</div>
+            </div>
+            
+            <div class="field">
+                <label class="label">Correo Electrónico</label>
+                <div class="control has-icons-left has-icons-right">
+                    <input type="email" placeholder="Correo Electrónico" class="input" id="email" name="correo">
+                    <span class="icon is-small is-left">
+                        <i class="fas fa-envelope"></i>
+                    </span>
+                    
+                </div>
+                <div id="resultado__correo" class="inactivo">Campo invalido, debe contener "@" y "."</div>
+            </div>
+
+            <div class="field is-horizontal">
+                <div class="field-body">
+                  <div class="field">
+                    <label class="label">Contraseña</label>
+                    <p class="control is-expanded has-icons-left has-icons-right">
+                      <input class="input" type="password" placeholder="Contraseña" id="contraseña" name="contraseña">
+                      <span class="icon is-small is-left">
+                        <i class="fas fa-lock"></i>
+                      </span>
+                      
+                    </p>
+                    <div id="resultado__contraseña" class="inactivo">Campo invalido, debe contener entre 4 y 12 dígitos</div>
+                  </div>
+                  <div class="field">
+                      <label class="label">Verificar contraseña</label>
+                    <p class="control is-expanded has-icons-left has-icons-right">
+                      <input class="input" type="password" placeholder="Verificar contraseña" id="contra" name="contraseña2">
+                      <span class="icon is-small is-left">
+                        <i class="fas fa-lock"></i>
+                      </span>
+                      
+                    </p>
+                    <div id="resultado__contraseña2" class="inactivo">Campo invalido, la contraseña debe coincidir</div>
+                  </div>
+                </div>
+            </div>
+
+            <div>
+              <p class="alerta">Rellene el formulario correctamente</p>
+            </div>
+
+            <div class="field" id="button">
+                <div class="control">
+                    <input type="submit" placeholder="Enviar" class="button" id="boton">
+                </div>
+                <p class="enviado">El formulario se envió correctamente</p>
+            </div>
+
+        </form>
+    </div>
+  <script src="js.js"></script>
+</body>
+</html>

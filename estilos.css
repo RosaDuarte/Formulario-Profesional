@@ -1,0 +1,123 @@
+
+html{    
+    background-color: #f0eef0;    
+}
+
+#div{
+    padding-top: 20px;
+}
+
+#div h1, #div label{
+    color: #2b87c8;
+}
+#div span{
+    color: #737875;
+}
+#div form{  
+    box-shadow: 0px 0px 5px #12447a; 
+}
+
+form #button{
+    text-align: center;
+}
+
+#div #form{
+    background-color: transparent;
+    
+}
+
+#div #form input{
+    background-color: transparent;
+    border: 1px solid #12447a;
+}
+
+#div #form i{
+    color: #12447a;
+}
+
+#div #form ::placeholder{
+    color: #737875;
+}
+
+#div #form .button{
+    color: #12447a;
+    border: 2px solid #12447a;
+}
+
+#div #form .button:hover{
+    color: #737875;
+    box-shadow: 0px 0px 5px #12447a;
+    transition: color 0.4s;
+}
+
+.resultado__nombre, .resultado__apellido, .resultado__usuario, .resultado__correo, .resultado__contraseña, .resultado__contraseña2{
+    display: none;
+}
+
+.activo{
+    color: #ff0f08;
+    font-size: 12px;
+}
+
+.inactivo{
+    display: none;
+}
+
+.alerta{
+    display: none;
+}
+.error{
+    padding: 5px;
+    color: #ff0f08;
+    text-align: center;
+}
+
+.enviado{
+    display: none;
+}
+
+.correcto{
+    color: #08bd2d;
+    text-align: center;
+    padding: 5px;
+}
+
+
+
+@media (min-width:769px) and (max-width:1023px){
+    body{
+        height: 100vh;
+    }
+    form{
+        width: 60%;
+        height: auto;
+    }
+}
+
+@media (min-width:1024px) and (max-width:1215px){  
+   
+    body{
+        height: 100vh;
+    }
+    form{
+        width: 50%;  
+        height: auto;  
+    }
+    
+    #div #form{
+        background-color: transparent;
+    }
+
+}
+
+@media (min-width:1216px) and (max-width:1407px){  
+    body{
+        height: 100vh;
+    }
+    form{
+        width: 50%;
+        height: auto;
+    }
+
+}
+
